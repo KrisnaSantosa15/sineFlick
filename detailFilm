@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SineFlick</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="robin.png" sizes="144x144">
+
+</head>
+<body >
+
+	<div class="navbar">
+		<div class="logo">
+			<a href="">
+				<img class="gambar" src="robin.png" alt="" width="100%" height="80">
+			</a>
+		</div>
+
+		<div class="navigasi">	
+				<ul>
+					<li><a href="index.html" class="list">Home</a></li>
+					<li><a href="" class="list">About</a></li>
+					<li class="category">
+						<a href="javascript:void(0)" class="categorybtn">Category</a>
+						<div class="category-content">
+							<a href="index.html" target="blank">Action</a>
+              <a href="index.html" target="blank">Action</a>
+						</div>
+					</li>
+					<li><a href="" class="list">Profile</a></li>
+				</ul>
+		</div>	
+	</div>
+
+	<div class="container2">
+		<div class="header">
+			<center><img src="robin.png" alt="logo" width="300" height="100"></center>
+		</div>
+
+		<div class="preview-image">
+			<iframe src="https://www.youtube.com/embed/xWJF0Mu7zJVgODXfh?v"></iframe>
+		</div>
+		<div class="konten">	
+		  <div class="main">
+				<h3>John Wick: Chapter 4</h3>
+			    <p>John Wick (Keanu Reeves) menemukan jalan untuk mengalahkan The High Table. Tapi sebelum dia bisa mendapatkan kebebasannya, Wick harus berhadapan dengan musuh baru dengan aliansi yang kuat di seluruh dunia! Memaksanya mengubah teman lama menjadi musuh.</p>
+			    <p>Tanggal rilis: 21 Maret 2023 (Indonesia)</p>
+				  <p>Sutradara: Chad Stahelski</p>
+				  <p>Box office: 440,1 juta USD</p>
+				  <p>Anggaran: 100 juta USD</p>
+				  <p>Genre: Comedy, Action</p>
+				  <p>Distributor: Lionsgate</p>
+			</div>	
+			
+			<div class="sidebar">
+					<img src="../../jpg/Charlotte.jpg" alt="Charlotte">
+			</div>
+			
+      <div class="clear">	</div>
+		  </div>
+
+		  <div class="download">
+			  <p>DOWNLOAD</p>
+		  </div>
+
+		  <div class="linkdownload">
+					<span class="sp1">
+						<a href="">
+							MP4Upload
+						</a>
+					</span>
+					<span class="sp2">
+						<a href="	">
+							Zippyshare
+						</a>
+					</span>
+		  </div>
+
+		<div class="footer">
+			<p>&copy; Copyright SineFlick</p>
+		</div>
+	</div>
+
+	<div class="footer1">
+			<div class="container-footer">
+
+				<h3>Thanks to:</h3>
+				<div class="head-footer">
+						<div class="foto-krisna">
+							<img src="fotokrisna.png" alt="KrisnaGanteng" width="200" height="200">
+						</div>
+				</div>
+			</div>	
+	</div>
+
+</body>
+</html>
