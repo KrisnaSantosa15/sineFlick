@@ -1,104 +1,218 @@
+<!-- Rafly Ivan, sineFlick Detail Film -->
+
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SineFlick</title>
-
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="robin.png" sizes="144x144" />
+    <style>
+      :root {
+        --primaryDark: #161722;
+        --textDark: #56555d;
+        --primaryLight: #fffefe;
+      }
+
+      .text-primaryLight {
+        color: var(--primaryLight);
+      }
+
+	  .header-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-logo {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+	  main {
+        background-color: #161722;
+        color: #f2f2f2;
+      }
+
+	  .konten {
+    	display: flex;
+   	 	flex-direction: row;
+   	 	justify-content: space-between;
+    	align-items: flex-start;
+    	width: 100%;
+	  }
+
+	  .main-container {
+        background-color: #0f0d18;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px;
+      }
+
+	  .film-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #0f0d18;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px;
+      }
+
+	  .poster-container, .preview-trailer {
+        flex: 1; /* Tambahkan ini */
+        margin: 0 10px; /* Tambahkan margin untuk memberikan ruang antara poster dan trailer */
+      }
+	
+	  .genre-container {
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 		gap: 10px; /* Menambahkan gap antara bubble */	
+	  }
+
+	  .genre-bubble {
+ 		padding: 5px 10px;
+ 		border-radius: 20px; /* Membuat sudut bubble menjadi bulat */
+ 		background-color: #56555d; /* Mengatur warna latar belakang bubble */
+ 		color: #fffefe; /* Mengatur warna teks bubble */
+ 		margin-left: 10px; /* Menambahkan margin kiri untuk menyesuaikan dengan poster */
+	  }
+
+	  .main article {
+ 		font-family: 'Arial', sans-serif; /* Mengubah tipe font */
+ 		font-size: 18px; /* Mengubah ukuran font */
+ 		line-height: 1.6; /* Mengubah tinggi baris */
+ 		color: #f2f2f2; /* Mengubah warna font */
+ 		text-align: justify; /* Membuat teks menjadi rata kiri-kanan */
+ 		margin-top: 20px; /* Menambahkan margin atas */
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada teks */
+ 		font-weight: bold; /* Membuat teks lebih tebal */
+	  }	
+
+
+    </style>
   </head>
-  <body>
-    <div class="navbar">
-      <div class="logo">
-        <a href="">
-          <img class="gambar" src="robin.png" alt="" width="100%" height="80" />
-        </a>
-      </div>
+  
+<body>
+    <header>
+        <nav style="background-color: #161722" class="border-b-2 border-slate-700">
+			<div class="container mx-auto px-4">
+			  <div class="flex items-center justify-between py-4">
+				<div class="header-container">
+					<img src="Assets/Images/SineFlick.png" alt="sineflick" class="header-logo">
+					<div class="text-white font-bold text-lg">SineFlick</div>
+				</div>
+				<div class="flex space-x-8">
+				  <a href="#" class="text-primaryLight">Movies</a>
+				  <a href="#" class="text-primaryLight">Series</a>
+				  <a href="#" class="text-primaryLight">TV Shows</a>
+				  <a href="#" class="text-primaryLight">Kids</a>
+				  <a href="#" class="text-primaryLight">Contact Us</a>
+				</div>
+				<div class="flex space-x-4">
+				  <select style="background-color: #161722" class="text-primaryLight bg-transparent border-none">
+					<option value="en">English</option>
+					<option value="id">Indonesian</option>
+					<option value="es">Spanish</option>
+				  </select>
+				  <button class="text-primaryLight">Sign In</button>
+				</div>
+			  </div>
+			</div>
+		</nav>
+    </header>
 
-      <div class="navigasi">
-        <ul>
-          <li><a href="index.html" class="list">Home</a></li>
-          <li><a href="" class="list">About</a></li>
-          <li class="category">
-            <a href="javascript:void(0)" class="categorybtn">Category</a>
-            <div class="category-content">
-              <a href="index.html" target="blank">Action</a>
-              <a href="index.html" target="blank">Action</a>
-            </div>
-          </li>
-          <li><a href="" class="list">Profile</a></li>
-        </ul>
-      </div>
-    </div>
+    <main class="main-container">
+		<section class="film-container">
+			<div class="poster-container">
+			  <aside class="sidebar">
+				<figure>
+				  <img width="270" height="415" src="Assets/Images/JohnWick4.jpg" alt="John Wick Chapter 4">
+				</figure>
+			  </aside>
+			</div>
+			<div class="preview-trailer">
+			  <iframe width="740" height="415" src="https://www.youtube.com/embed/qEVUtrk8_B4?si=VgTwXaXVqyMLUit4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</section>
+		
+		<section class="container2">
+			<div class="genre-container">
+				<span class="genre-bubble">Action</span>
+				<span class="genre-bubble">Crime</span>
+				<span class="genre-bubble">Drama</span>
+			</div>
+			   
+			<article class="main">
+				<h3>John Wick: Chapter 4</h3>
+				<p>John Wick (Keanu Reeves) menemukan jalan untuk mengalahkan The High Table. Tapi sebelum dia bisa mendapatkan kebebasannya, Wick harus berhadapan dengan musuh baru dengan aliansi yang kuat di seluruh dunia! Memaksanya mengubah teman lama menjadi musuh.</p>
+				<p>Tanggal rilis: 21 Maret 2023 (Indonesia)</p>
+				<p>Sutradara: Chad Stahelski</p>
+				<p>Box office: 440,1 juta USD</p>
+				<p>Anggaran: 100 juta USD</p>
+				<p>Distributor: Lionsgate</p>
+			</article>
+		</section>
+	</main>
 
-    <div class="container2">
-      <div class="header">
-        <center>
-          <img src="robin.png" alt="logo" width="300" height="100" />
-        </center>
-      </div>
+    <section style="background-color: #0f0d18" class="text-primaryLight">
+		<div class="container mx-auto px-4 py-12">
+		  <div class="flex items-center justify-center gap-8">
+			<div class="w-auto">
+			  <h2 class="text-2xl font-bold mb-4">Are you ready to watch?</h2>
+			  <p class="text-lg mb-8">
+				Enter your email address to subscribe and get updates.
+			  </p>
+			  <form>
+				<input
+				  type="email"
+				  placeholder="Enter your email address"
+				  class="w-80 px-4 py-2 rounded-l text-gray-900 focus:outline-none"
+				/>
+				<button
+				  type="submit"
+				  style="background-color: #161722"
+				  class="text-primaryLight px-4 py-2 rounded-r"
+				>
+				  Subscribe
+				</button>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </section>
 
-      <div class="preview-image">
-        <iframe
-          src="https://www.youtube.com/embed/xWJF0Mu7zJVgODXfh?v"
-        ></iframe>
-      </div>
-      <div class="konten">
-        <div class="main">
-          <h3>John Wick: Chapter 4</h3>
-          <p>
-            John Wick (Keanu Reeves) menemukan jalan untuk mengalahkan The High
-            Table. Tapi sebelum dia bisa mendapatkan kebebasannya, Wick harus
-            berhadapan dengan musuh baru dengan aliansi yang kuat di seluruh
-            dunia! Memaksanya mengubah teman lama menjadi musuh.
-          </p>
-          <p>Tanggal rilis: 21 Maret 2023 (Indonesia)</p>
-          <p>Sutradara: Chad Stahelski</p>
-          <p>Box office: 440,1 juta USD</p>
-          <p>Anggaran: 100 juta USD</p>
-          <p>Genre: Comedy, Action</p>
-          <p>Distributor: Lionsgate</p>
-        </div>
-
-        <div class="sidebar">
-          <img src="../../jpg/Charlotte.jpg" alt="Charlotte" />
-        </div>
-
-        <div class="clear"></div>
-      </div>
-
-      <div class="download">
-        <p>DOWNLOAD</p>
-      </div>
-
-      <div class="linkdownload">
-        <span class="sp1">
-          <a href=""> MP4Upload </a>
-        </span>
-        <span class="sp2">
-          <a href="	"> Zippyshare </a>
-        </span>
-      </div>
-
-      <div class="footer">
-        <p>&copy; Copyright SineFlick</p>
-      </div>
-    </div>
-
-    <div class="footer1">
-      <div class="container-footer">
-        <h3>Thanks to:</h3>
-        <div class="head-footer">
-          <div class="foto-krisna">
-            <img
-              src="fotokrisna.png"
-              alt="KrisnaGanteng"
-              width="200"
-              height="200"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    <footer style="background-color: #161722" class="text-primaryLight">
+		<div class="container mx-auto px-4 py-12">
+		  <div class="flex items center justify-between">
+			<div class="w-1/4">
+			  <h1
+				style="color: #f58c53"
+				class="text-primaryOrange text-2xl font-bold"
+			  >
+			  <img src="Assets/Images/SineFlick.png" alt="sineflick" style="width: 70px; height: 70px;">
+			  </h1>
+			  <h2 class="text-lg font-bold mb-4">About Us</h2>
+			  <p class="text-sm">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+				eget felis ut erat luctus tincidunt.
+			  </p>
+			</div>
+			<div class="w-1/4">
+			  <h2 class="text-lg font-bold mb-4">Contact Us</h2>
+			  <p class="text-sm">Email: sineflick@gmail.com</p>
+			  <p class="text-sm">Phone: +62 123 456 789</p>
+			</div>
+			<div class="w-1/4">
+			  <h2 class="text-lg font-bold mb-4">Follow Us</h2>
+			  <div class="flex space-x-4">
+				<a href="#" class="text-primaryLight">Facebook</a>
+				<a href="#" class="text-primaryLight">Instagram</a>
+				<a href="#" class="text-primaryLight">Twitter</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+</body>
 </html>
