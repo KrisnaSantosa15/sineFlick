@@ -1,11 +1,614 @@
+<!-- KRISNA SANTOSA, SINEFLICK MAIN PAGE -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SineFlick</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --primaryDark: #161722;
+        --textDark: #56555d;
+        --primaryLight: #fffefe;
+      }
+
+      .text-primaryLight {
+        color: var(--primaryLight);
+      }
+    </style>
   </head>
   <body>
-    SineFlick Main Page
+    <!-- Navbar -->
+    <nav style="background-color: #161722" class="border-b-2 border-slate-700">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <div class="text-white font-bold text-lg">KRISNA SANTOSA</div>
+          <div class="flex space-x-8">
+            <a href="#" class="text-primaryLight">Movies</a>
+            <a href="#" class="text-primaryLight">Series</a>
+            <a href="#" class="text-primaryLight">TV Shows</a>
+            <a href="#" class="text-primaryLight">Kids</a>
+            <a href="#" class="text-primaryLight">Contact Us</a>
+          </div>
+          <div class="flex space-x-4">
+            <select class="text-primaryLight bg-transparent border-none">
+              <option value="en">English</option>
+              <option value="id">Indonesian</option>
+              <option value="es">Spanish</option>
+            </select>
+            <button class="text-primaryLight">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="background-color: #161722" class="text-primaryLight">
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex items-center justify-between">
+          <div class="w-1/2">
+            <h1 class="text-4xl font-bold mb-4">
+              Come See
+              <span style="color: #f58c53" class="text-primaryOrange">
+                What's Next in Movies
+              </span>
+              and TV Shows for You in 2024 and Beyond
+              <span style="color: #f58c53" class="text-primaryOrange">
+                with SineFlick
+              </span>
+            </h1>
+            <p class="text-lg py-3">
+              Enjoy the various series and movies that we provide for you. We
+              have a wide selection of movies and series that you can watch.
+            </p>
+
+            <!-- Button outlined Learn more -->
+            <div class="row my-5">
+              <button
+                style="color: #f58c53"
+                class="text-primaryOrange border-2 border-primaryOrange px-4 py-3 mt-4 mb-5 rounded"
+              >
+                Learn More
+              </button>
+              <button
+                style="background-color: #f58c53"
+                class="text-primaryDark px-4 py-3 mt-4 mb-5 rounded mx-4 px-4 py-3 mt-4 mb-5 rounded"
+              >
+                Get Started
+              </button>
+            </div>
+
+            <div class="row mt-5">
+              <p>
+                Hi there! Search for your favorite movies and TV shows here.
+              </p>
+              <div class="flex w-[30rem] rounded bg-white my-4">
+                <input
+                  type="search"
+                  class="w-full border-none bg-transparent px-4 py-1 text-gray-900 focus:outline-none"
+                  placeholder="search"
+                  id="searchInput"
+                />
+                <button
+                  id="searchButton"
+                  class="m-2 rounded px-4 py-2 font-semibold text-gray-100 bg-gray-500 cursor-not-allowed"
+                >
+                  search
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/2 flex justify-end">
+            <img
+              src="Assets/Images/batman.png"
+              alt="Movie Poster"
+              class="w-85"
+              style="object-fit: cover; object-position: top"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hr -->
+    <hr class="border-slate-700" />
+
+    <!-- Movie Recommendation -->
+    <section style="background-color: #161722" class="text-primaryLight">
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex items-center justify-between">
+          <div class="w-1/2">
+            <h1 class="text-4xl font-bold mb-4">
+              The Best Movie Recommendation & Latest Just for You
+            </h1>
+          </div>
+          <div class="w-1/3">
+            <p class="text-lg text-right">
+              Enjoy the various series and movies that we provide for you. We
+              have a wide selection of movies and series that you can watch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <section style="background-color: #161722" class="text-primaryLight">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex items-center justify-between">
+          <div class="w-1/4">
+            <h3 class="text-2xl font-bold mb-4">Movie Recommended</h3>
+          </div>
+          <div class="w-auto">
+            <nav aria-label="Page navigation example w-auto">
+              <ul class="inline-flex space-x-4">
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 ml-0 rounded-l-lg leading-tight py-2 px-3 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >Previous</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white rounded"
+                    >1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    aria-current="page"
+                    style="background-color: #f58c53"
+                    class="border border-gray-300 text-blue-600 hover:bg-gray-700 hover:text-white py-2 px-3 dark:border-gray-700 dark: dark:text-white rounded"
+                    >2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white rounded"
+                    >4</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white rounded"
+                    >5</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white rounded"
+                    >...</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-3 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white rounded"
+                    >10</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-r-lg leading-tight py-2 px-3 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    >Next</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Film Cards -->
+    <section style="background-color: #161722" class="text-primaryLight">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-wrap -mx-4">
+          <!-- Film 1 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.5 Rating
+              </div>
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 right-0 text-primaryDark px-2 py-1 rounded-tr"
+              >
+                UHD+
+              </div>
+              <img
+                src="Assets/Images/film1.jpeg"
+                alt="Monster House"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">Monster House</h2>
+                <p class="text-sm">2019</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 2 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.9 Rating
+              </div>
+              <img
+                src="Assets/Images/film2.jpeg"
+                alt="Anette"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">Annette</h2>
+                <p class="text-sm">2018</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 3 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                3.9 Rating
+              </div>
+              <img
+                src="Assets/Images/film3.jpeg"
+                alt="The Conjuring"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">The Conjuring</h2>
+                <p class="text-sm">2019</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 4 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.1 Rating
+              </div>
+              <img
+                src="Assets/Images/film4.jpeg"
+                alt="The Conjuring 2"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">The Conjuring 2</h2>
+                <p class="text-sm">2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-4">
+          <!-- Film 1 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.5 Rating
+              </div>
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 right-0 text-primaryDark px-2 py-1 rounded-tr"
+              >
+                UHD+
+              </div>
+              <img
+                src="Assets/Images/film1.jpeg"
+                alt="Monster House"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">Monster House</h2>
+                <p class="text-sm">2019</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 2 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.9 Rating
+              </div>
+              <img
+                src="Assets/Images/film2.jpeg"
+                alt="Anette"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">Annette</h2>
+                <p class="text-sm">2018</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 3 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                3.9 Rating
+              </div>
+              <img
+                src="Assets/Images/film3.jpeg"
+                alt="The Conjuring"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">The Conjuring</h2>
+                <p class="text-sm">2019</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 4 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.1 Rating
+              </div>
+              <img
+                src="Assets/Images/film4.jpeg"
+                alt="The Conjuring 2"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">The Conjuring 2</h2>
+                <p class="text-sm">2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-4">
+          <!-- Film 1 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.5 Rating
+              </div>
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 right-0 text-primaryDark px-2 py-1 rounded-tr"
+              >
+                UHD+
+              </div>
+              <img
+                src="Assets/Images/film1.jpeg"
+                alt="Monster House"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">Monster House</h2>
+                <p class="text-sm">2019</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 2 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.9 Rating
+              </div>
+              <img
+                src="Assets/Images/film2.jpeg"
+                alt="Anette"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">Annette</h2>
+                <p class="text-sm">2018</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 3 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                3.9 Rating
+              </div>
+              <img
+                src="Assets/Images/film3.jpeg"
+                alt="The Conjuring"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">The Conjuring</h2>
+                <p class="text-sm">2019</p>
+              </div>
+            </div>
+          </div>
+          <!-- Film 4 -->
+          <div class="w-1/4 px-4">
+            <div class="relative">
+              <div
+                style="background-color: #f58c53"
+                class="absolute top-0 left-0 text-primaryDark px-2 py-1 rounded-tl"
+              >
+                4.1 Rating
+              </div>
+              <img
+                src="Assets/Images/film4.jpeg"
+                alt="The Conjuring 2"
+                class="w-full h-64 object-contain"
+              />
+              <div
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-b"
+              >
+                <h2 class="text-lg font-bold">The Conjuring 2</h2>
+                <p class="text-sm">2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- button more -->
+      <div class="flex justify-center">
+        <button
+          style="background-color: #f58c53"
+          class="text-primaryDark px-4 py-3 mt-4 mb-5 rounded"
+        >
+          See More Movies!
+        </button>
+      </div>
+    </section>
+
+    <!-- Email Subscription -->
+    <section style="background-color: #0f0d18" class="text-primaryLight">
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex items-center justify-center gap-8">
+          <div class="w-auto">
+            <h2 class="text-2xl font-bold mb-4">Are you ready to watch?</h2>
+            <p class="text-lg mb-8">
+              Enter your email address to subscribe and get updates.
+            </p>
+            <form>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="w-80 px-4 py-2 rounded-l text-gray-900 focus:outline-none"
+              />
+              <button
+                type="submit"
+                style="background-color: #161722"
+                class="text-primaryLight px-4 py-2 rounded-r"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #161722" class="text-primaryLight">
+      <div class="container mx-auto px-4 py-12">
+        <div class="flex items center justify-between">
+          <div class="w-1/4">
+            <h1
+              style="color: #f58c53"
+              class="text-primaryOrange text-2xl font-bold"
+            >
+              Logo
+            </h1>
+            <h2 class="text-lg font-bold mb-4">About Us</h2>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              eget felis ut erat luctus tincidunt.
+            </p>
+          </div>
+          <div class="w-1/4">
+            <h2 class="text-lg font-bold mb-4">Contact Us</h2>
+            <p class="text-sm">Email: sineflick@gmail.com</p>
+            <p class="text-sm">Phone: +62 123 456 789</p>
+          </div>
+          <div class="w-1/4">
+            <h2 class="text-lg font-bold mb-4">Follow Us</h2>
+            <div class="flex space-x-4">
+              <a href="#" class="text-primaryLight">Facebook</a>
+              <a href="#" class="text-primaryLight">Instagram</a>
+              <a href="#" class="text-primaryLight">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const searchButton = document.getElementById("searchButton");
+
+    searchInput.addEventListener("input", () => {
+      const searchValue = searchInput.value.trim();
+
+      if (searchValue) {
+        searchButton.classList.remove("bg-gray-500", "cursor-not-allowed");
+        searchButton.classList.add("bg-gray-500", "cursor-pointer");
+        searchButton.disabled = false;
+      } else {
+        searchButton.classList.remove("");
+        searchButton.classList.add("bg-gray-500", "cursor-not-allowed");
+        searchButton.disabled = true;
+      }
+    });
+  </script>
 </html>
